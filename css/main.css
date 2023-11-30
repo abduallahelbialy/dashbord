@@ -389,4 +389,14 @@ a {
 .titt {
   font-size: 20px;
 }
+@media (max-width: 477px) {
+  .btnav button {
+    padding: 10px 9px !important;
+    background-color: var(--bacbtu1-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+}
+}
 /* end page acoount */
