@@ -1,0 +1,392 @@
+@font-face {
+  font-family: myfont;
+  src: url("../fonts/URW\ DIN\ Arabic\ Medium.ttf");
+}
+body {
+  font-family: "Cairo", sans-serif;
+  /* height: 1000px; */
+  font-family: "myfont", sans-serif;
+}
+:root {
+  --bacbtu1-color: #84d226;
+  --bacbtn2-color: #2ac0eb;
+  --bactext-color: #e5e5e5;
+  --text-color: #e5e5e5;
+  --background1-color: #53cc98;
+  --background2-color: #45c8b6;
+    --border-color:#dee2e6;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* scroll */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+}
+.btno {
+  padding: 10px 25px;
+  background-color: var(--bacbtu1-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bacbtu1-color);
+  border-radius: 5px;
+}
+/* start nav */
+.nav {
+  padding: 8px 0;
+  background-color: #fff;
+  position: relative;
+}
+.nav .contnav .imgnav {
+  text-align: center;
+}
+.btnav button {
+  padding: 10px 14px;
+  background-color: var(--bacbtu1-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+}
+/* end nav */
+/* start login */
+.login {
+  padding: 30px 0;
+  background-color: var(--bacbtu1-color);
+  animation: change-background 10s linear infinite;
+}
+@keyframes change-background {
+  0%,
+  100% {
+    background-color: var(--bacbtn2-color);
+  }
+
+  50% {
+    background-color: var(--bacbtu1-color);
+  }
+  30% {
+    background-color: var(--bacbtn2-color);
+  }
+}
+.login .bor {
+  border: 8px solid var(--bactext-color);
+  display: flex;
+}
+
+.img-box {
+  border-radius: 5px;
+  width: 50%;
+}
+@media (max-width: 477px) {
+  .img-box {
+    display: none;
+  }
+}
+.img-box img {
+  width: 100%;
+}
+.iput-box {
+  background-color: white;
+  width: 50%;
+  position: relative;
+}
+/* media */
+@media (max-width: 767px) {
+  .iput-box {
+    width: 100%;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .login .bor {
+    flex-direction: column;
+  }
+  .inptform input,
+  .pass {
+    width: 100%;
+  }
+  .show i {
+    position: absolute;
+    left: 9% !important;
+    transform: translateY(-28px);
+    color: #2ac0eb;
+  }
+  .med {
+    width: 90% !important;
+  }
+  .tit {
+    font-size: 15px !important;
+  }
+  .forg {
+    margin-right: 36px !important;
+  }
+}
+@media (max-width: 799px) {
+  .iput-box {
+    width: 100%;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .login .bor {
+    flex-direction: column;
+  }
+  .inptform input,
+  .pass {
+    width: 100%;
+  }
+  .med {
+    width: 90% !important;
+  }
+}
+@media (max-width: 992px) {
+  .iput-box {
+    width: 100%;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .login .bor {
+    flex-direction: column;
+  }
+  .inptform input,
+  .pass {
+    width: 100%;
+  }
+  .med {
+    width: 90% !important;
+  }
+}
+.iput-box .text {
+  margin-top: 200px;
+}
+.tit {
+  font-size: 30px;
+}
+.inptform input,
+.pass {
+  border-radius: 8px;
+  width: 70%;
+  padding: 10px 24px;
+  /* outline:auto; */
+  border: 1px solid #dee2e6;
+}
+
+.inptform input,
+.pass::placeholder {
+  text-align: right;
+  font-weight: 600;
+}
+.ico {
+  position: relative;
+  right: 25px;
+  top: 2px;
+  color: #2ac0eb;
+}
+
+.forg {
+  text-align: right;
+  margin-right: 100px;
+  font-weight: 600;
+}
+
+.bton button {
+  background-color: var(--bacbtn2-color);
+  margin-top: 10px;
+  width: 70%;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.new {
+  color: #84d226;
+}
+.show {
+  position: relative;
+  cursor: pointer;
+}
+.show i {
+  position: absolute;
+  left: 18%;
+  transform: translateY(-28px);
+  color: #2ac0eb;
+}
+/* end login */
+/* start page new account */
+.upload-img {
+  border: 5px dashed #ccc;
+
+  width: 150px;
+  height: 150px;
+  padding: 28px 0;
+  color: #2ac0eb;
+  background-color: var(--text-color);
+  margin-bottom: 7px;
+}
+.inptacc input {
+  border-radius: 8px;
+  width: 40%;
+  padding: 10px 30px;
+  border: 1px solid #dee2e6;
+}
+
+.inptacc {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+@media (max-width: 767px) {
+  .inptacc {
+    flex-direction: column;
+  }
+
+  .icoo {
+    position: relative;
+    right: -134px !important;
+    top: -34px !important;
+    color: #2ac0eb;
+  }
+  .inptacc input {
+    width: 80%;
+  }
+  .icooo {
+    position: relative;
+    right: -143px !important;
+    top: -28px !important;
+    color: #2ac0eb;
+  }
+  .dd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px !important;
+    flex-direction: column;
+  }
+  .showw i {
+    position: absolute;
+    left: 9%;
+    transform: translateY(-40px) !important;
+  }
+}
+.inptacc input::placeholder {
+  text-align: right !important;
+  font-weight: 600;
+}
+.icoo {
+  position: relative;
+  right: 33px;
+  top: 2px;
+  color: #2ac0eb;
+}
+.icooo {
+  position: relative;
+  right: 24px;
+  top: 2px;
+  color: #2ac0eb;
+}
+.dd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+.dd input {
+  border-radius: 8px;
+  width: 86%;
+  padding: 10px 30px;
+  border: 1px solid #dee2e6;
+}
+
+.dd input::placeholder {
+  text-align: right;
+  font-weight: 600;
+}
+.showw {
+  position: relative;
+  cursor: pointer;
+}
+.showw i {
+  position: absolute;
+  left: 8%;
+  transform: translateY(-28px);
+}
+/* end page new account */
+/* start page acoount */
+
+.boxin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.boxin input {
+  border: 2px solid #2ac0eb;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 4px;
+}
+.reply {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.reply .er {
+  color: #84d226;
+}
+.reply .rr {
+  font-size: 12px;
+}
+.chang {
+  background-color: #fff;
+  margin: 0px 50px;
+  box-shadow: 1px 2px #ddd;
+  border-radius: 4px;
+}
+.chang p {
+  font-size: 15px;
+}
+.changg {
+  background-color: #84d226;
+  margin: 0px 50px;
+  box-shadow: 1px 2px #ddd;
+  border-radius: 8px;
+  padding: 1px;
+  color: white;
+  font-weight: 600;
+}
+.chang button {
+  background-color: #2ac0eb;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+.titt {
+  font-size: 20px;
+}
+/* end page acoount */

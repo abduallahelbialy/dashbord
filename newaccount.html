@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>dashbord</title>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <div class="nav">
+        <div class="container">
+            <div class="row">
+                <div class="contnav">
+                    <div class="btnav ">
+                        <button class="fw-bold" onclick="window.location.href='home.html'"> تسحيل الخول</button>
+                    </div>
+                    <div class="imgnav">
+                        <img src="imgs/main-logo2.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+    <!-- start login -->
+    <div class="login">
+
+        <div class="container">
+            <div class="bor">
+                <div class="img-box">
+                    <img src="imgs/Screenshot 2023-11-24 190240.png" alt="">
+                </div>
+                <div class="iput-box">
+                    <div class="text text-center">
+                        <div class="fw-bold tit">مرحبا بعودتك فى فواتير اوامر</div>
+                        <p class="fw-bold text-center"> حساب جديد</p>
+                        <p class="text-black-50 text-center fw-bold">الرجاء ادخال البيانات التالية لانشاء حساب </p>
+                        <div class="pictshr">
+                            <label for="upload-img" class="upload-img">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <div class="up-text">الصورة الشخصية</div>
+                                <div class="up-text">png , Jpg</div>
+                                <img src="" class="imgProfile" alt="" />
+                            </label>
+                            <input id="upload-img" onchange="uploadProfileIMG(this)" class="upload-main-in" type="file" accept="image/*"
+                                hidden />
+                        </div>
+                    </div>
+                    <div class="inptacc text-center">
+
+                        <input type="text" placeholder="الرجاء ادخال اسم المتجر">
+                        <i class="fa-solid fa-shop icoo"></i>
+                        <input type="text" placeholder="الرجاء ادخال اسم المستخدم">
+                        <i class="fa-regular fa-user icoo"></i>
+
+
+                    </div>
+                    <div class="inptacc text-center">
+                        <input type="text" placeholder="الرجاء ادخال البريد الالكترونى">
+                        <i class="fa-regular fa-envelope icoo"></i>
+                        <input type="number" placeholder="الرجاء ادخال رقم الجوال">
+                        <i class="fa-solid fa-mobile-screen icoo"></i>
+                    </div>
+                    <div class="dd mt-3 text-center">
+                        <input type="password" id="password" placeholder="الرجاء ادخال كلمة المرور">
+                        <i class="fa-solid fa-lock icooo"></i>
+
+                    </div>
+                    <div class="showw" id="togglepassword">
+                        <i class="fa-regular fa-eye-slash eya "></i>
+                    </div>
+                    <div class="dd mt-3 text-center">
+                        <input type="password" id="password" placeholder="الرجاء تأكيد كلمة المرور">
+                        <i class="fa-solid fa-lock icooo"></i>
+
+                    </div>
+                    <div class="showw" id="togglepassword">
+                        <i class="fa-regular fa-eye-slash eya "></i>
+                    </div>
+
+                    <div class="forg mt-2 ">
+                        <a href="forget.html" class="text-black-50  ">نسيت كلمة المرور؟</a>
+                    </div>
+                    <div class="bton text-center me-3 ">
+                        <button class="med" onclick="window.location.href='acoount.html'" >تسجيل </button>
+                        <p class="text-black-50 fw-bold">لا املك حساب؟ <a href="home.html" class="new">
+                                تسجيل دخول</a></p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
