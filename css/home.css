@@ -1501,7 +1501,7 @@ font-size: 13px;
   .rfonsh input{
   margin-top: 15px;
   width: 50%;
-  padding: 7px;
+  padding: 8px 28px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
 }
@@ -1514,8 +1514,27 @@ font-size: 13px;
     color: #696767;
     left: -109px;
 }
-
-  
+.rfonsh input {
+    margin-top: 15px;
+    width: 87%;
+    padding: 8px 28px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+.ixyk {
+    position: relative;
+    top: -26px;
+    right: -40%;
+    z-index: 2;
+    color: #2ac0eb;
+}
+  #finshey {
+    position: relative;
+    top: -42px;
+    left: -37%;
+    z-index: 2;
+    color: #2ac0eb;
+}
 }
 
 /* end myprof */
