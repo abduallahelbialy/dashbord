@@ -1538,4 +1538,16 @@ font-size: 13px;
 }
 
 /* end myprof */
+/* animation */
+#zoom{
+  animation: zoom-out 1s ease infinite;
+}
+@keyframes zoom-out {
+  0%,100%{
+    transform: scale(1.5);
+  }
+  50%{
+    transform: scale(1);
+  }
+}
 
