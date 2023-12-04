@@ -1424,8 +1424,9 @@ font-size: 13px;
 
 .sins{
   background-color: #2ac0eb !important;
-  padding: 5px 70px !important;
+  padding: 5px 60px !important;
   margin: 10px 0 !important ;
+  font-size: 12px;
 }
 .sinss{
   background-color: transparent !important;
